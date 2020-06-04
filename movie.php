@@ -24,6 +24,9 @@ class Movies {
     public function howOldIs($currentYear) {
         return $currentYear - $this->year; 
     }
+    public function transform($hour) {
+        return number_format($this->duration / $hour, 2);
+    }
 }
 
 

@@ -15,21 +15,21 @@
             <h4>Regista: <span><?php echo $first_movie->director; ?></span>  </h4>
             <h4>Anno: <span><?php echo $first_movie->year; ?></span>  </h4>
             <p> E' stato girato <?php echo $first_movie->howOldIs(2020); ?> anni fa </p>
-            <h4>Durata film: <span><?php echo $first_movie->duration; ?> minuti</span>  </h4>
+            <h4>Durata film: <span><?php echo $first_movie->duration; ?> minuti ( <?php echo $first_movie->transform(60)?> ore)</span>  </h4>
         </div>
         <div class="movie">
             <h2><?php echo $second_movie->title; ?></h2>
             <h4>Regista: <span><?php echo $second_movie->director; ?></span>  </h4>
             <h4>Anno: <span><?php echo $second_movie->year; ?></span>  </h4>
             <p> E' stato girato <?php echo $second_movie->howOldIs(2020); ?> anni fa </p>
-            <h4>Durata film: <span><?php echo $second_movie->duration; ?> minuti</span>  </h4>
+            <h4>Durata film: <span><?php echo $second_movie->duration; ?> minuti ( <?php echo $second_movie->transform(60)?> ore)</span>  </h4>
         </div>
         <div class="movie">
             <h2><?php echo $third_movie->title; ?></h2>
             <h4>Regista: <span><?php echo $third_movie->director; ?></span>  </h4>
             <h4>Anno: <span><?php echo $third_movie->year; ?></span>  </h4>
             <p> E' stato girato <?php echo $third_movie->howOldIs(2020); ?> anni fa </p>
-            <h4>Durata film: <span><?php echo $third_movie->duration; ?> minuti</span>  </h4>
+            <h4>Durata film: <span><?php echo $third_movie->duration; ?> minuti ( <?php echo $third_movie->transform(60)?> ore)</span>  </h4>
         </div>
     </div>
 </body>
